@@ -1,9 +1,33 @@
 body{
     margin: 10;
     padding: 10;
-    background:azure;
-
+    background:rgb(0, 102, 128);
+    border:10px;
 }
 h1{
     text-align: center;
 }
+first {
+    border: 10cm;
+    border-color: red;
+}
+
+.right{
+    border-radius: var(--border-radius);
+    height: 100px;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+
+}
+@media screen and  (min-width: 992px) {
+    .about-page{
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 400px;
+      align-items: center;
+    }
+    .about-img{
+      height: 100%;
+    }
+  };
